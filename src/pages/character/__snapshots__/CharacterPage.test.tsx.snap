@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CharacterPage > renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-hLQSwg jLdJAy"
+  >
+    <header>
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Back
+      </a>
+    </header>
+    <div
+      class="sc-beySPh lmGOwP"
+    >
+      <div
+        class="sc-guDLey eYNAQj"
+      >
+        <h2>
+          C-3PO
+        </h2>
+        <ul>
+          <li>
+            Hair Color: n/a
+          </li>
+          <li>
+            Eye Color: yellow
+          </li>
+          <li>
+            Height: 167
+          </li>
+          <li>
+            Gender: n/a
+          </li>
+          <li>
+            Homeworld: https://swapi.dev/api/planets/1/
+          </li>
+        </ul>
+      </div>
+      <div
+        class="sc-dmyCSP jneFik"
+      >
+        <h3>
+          Films Appeared In:
+        </h3>
+        <ul>
+          <li>
+            Fetching film titles...
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

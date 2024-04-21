@@ -2,14 +2,11 @@ export interface StarWarsAPIResponse {
     count: number;
     next: string | null;
     previous: string | null;
-    results: Character[];
+    results: ICharacter[];
 }
 
-export interface Film {
-    url: string; // Assuming you don't need details about films
-}
-
-export interface Character {
+export interface ICharacter {
+    id: string
     name: string;
     height: string;
     mass: string;
@@ -19,10 +16,27 @@ export interface Character {
     birth_year: string;
     gender: string;
     homeworld: string;
-    films: Film[]; // Array of film URLs
+    films: string[]; // Array of film URLs
     species: string[]; // Assuming you don't need details about species
     vehicles: string[]; // Array of vehicle URLs
     starships: string[]; // Array of starship URLs
+    created: string;
+    edited: string;
+    url: string;
+}
+
+export interface FilmDetail {
+    title: string;
+    episode_id: number;
+    opening_crawl: string;
+    director: string;
+    producer: string;
+    release_date: string;
+    characters: string[];
+    planets: string[];
+    starships: string[];
+    vehicles: string[];
+    species: string[];
     created: string;
     edited: string;
     url: string;

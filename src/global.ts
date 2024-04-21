@@ -6,9 +6,10 @@ export default createGlobalStyle`
         padding: 0;
         outline:0;
         box-sizing:border-box;
-        font-family: 'Open Sans', sans-serif; 
+        font-family: 'Open Sans', sans-serif;
+        box-sizing: border-box;
     }
-    #root{
+    #root {
         margin:0 auto;
     }
  `

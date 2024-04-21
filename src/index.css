@@ -4,11 +4,17 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: #0b040d url("./assets/bg.jpg");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Star Wars';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Star Wars'), url('./assets/fonts/Starjout.woff2') format('woff2');
 }

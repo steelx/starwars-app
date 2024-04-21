@@ -25,7 +25,9 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
     "paths": {
-      "@styles/*": ["styles/*"],
+      "@test-helpers/*": ["../test-helpers/*"],
+      "@assets/*": ["assets/*"],
+      "@shared/*": ["shared/*"],
       "@store/*": ["store/*"],
       "@pages/*": ["pages/*"],
     }

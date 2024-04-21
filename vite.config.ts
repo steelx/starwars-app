@@ -14,12 +14,14 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: ["./setuptest.ts"],
-    include: ["./src/**/*.{test}.{ts,tsx}"],
+    setupFiles: ["./test-helpers/setupTest.ts"],
+    include: ["./src/**/*.{test,spec}.{ts,tsx}"],
   },
   resolve: {
     alias: [
-      { find: '@styles', replacement: resolve(__dirname, './src/styles') },
+      { find: '@test-helpers', replacement: resolve(__dirname, './test-helpers') },
+      { find: '@assets', replacement: resolve(__dirname, './src/assets') },
+      { find: '@shared', replacement: resolve(__dirname, './src/shared') },
       { find: '@store', replacement: resolve(__dirname, './src/store') },
       { find: '@pages', replacement: resolve(__dirname, './src/pages') },
     ]
