@@ -6,6 +6,7 @@ import {
     FilmList
 } from "@pages/character/components/styles";
 import {useGetCharacterFilmsQuery} from "@store/star-wars-api/starWarsApi";
+import CharacterDetailsItem from "@pages/character/components/CharacterDetailsItem";
 
 
 interface CharacterProps {
@@ -20,11 +21,11 @@ const CharacterDetails: React.FC<CharacterProps> = ({ character }) => {
         <CharacterDetailsContainer>
             <h2>{character.name}</h2>
             <ul>
-                <li>Hair Color: {character.hair_color}</li>
-                <li>Eye Color: {character.eye_color}</li>
-                <li>Height: {character.height}</li>
-                <li>Gender: {character.gender}</li>
-                <li>Homeworld: {character.homeworld}</li>
+                <CharacterDetailsItem>Hair Color: {character.hair_color}</CharacterDetailsItem>
+                <CharacterDetailsItem>Eye Color: {character.eye_color}</CharacterDetailsItem>
+                <CharacterDetailsItem>Height: {character.height}</CharacterDetailsItem>
+                <CharacterDetailsItem>Gender: {character.gender}</CharacterDetailsItem>
+                <CharacterDetailsItem>Homeworld: {character.homeworld}</CharacterDetailsItem>
             </ul>
         </CharacterDetailsContainer>
         <FilmList>
@@ -32,11 +33,11 @@ const CharacterDetails: React.FC<CharacterProps> = ({ character }) => {
             <ul>
                 { films && films.length > 0 && (
                     films.map((detail, index) => (
-                        <li key={index}>{detail.title}</li>
+                        <CharacterDetailsItem key={index}>{detail.title}</CharacterDetailsItem>
                     ))
                 )}
                 { isFilmDetailsLoading && (
-                    <li>Fetching film titles...</li>
+                    <CharacterDetailsItem>Fetching film titles...</CharacterDetailsItem>
                 )}
             </ul>
         </FilmList>

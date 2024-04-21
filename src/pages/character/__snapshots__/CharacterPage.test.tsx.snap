@@ -3,7 +3,7 @@
 exports[`CharacterPage > renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-hLQSwg jLdJAy"
+    class="sc-eDLKkx ditfRh"
   >
     <header>
       <a
@@ -15,40 +15,52 @@ exports[`CharacterPage > renders correctly 1`] = `
       </a>
     </header>
     <div
-      class="sc-beySPh lmGOwP"
+      class="sc-beySPh fOSsff"
     >
       <div
-        class="sc-guDLey eYNAQj"
+        class="sc-guDLey jmmUSo"
       >
         <h2>
           C-3PO
         </h2>
         <ul>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Hair Color: n/a
           </li>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Eye Color: yellow
           </li>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Height: 167
           </li>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Gender: n/a
           </li>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Homeworld: https://swapi.dev/api/planets/1/
           </li>
         </ul>
       </div>
       <div
-        class="sc-dmyCSP jneFik"
+        class="sc-hLQSwg gDiYxq"
       >
         <h3>
           Films Appeared In:
         </h3>
         <ul>
-          <li>
+          <li
+            class="sc-dmyCSP cRcTuR"
+          >
             Fetching film titles...
           </li>
         </ul>

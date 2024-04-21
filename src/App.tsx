@@ -1,21 +1,26 @@
 import { Provider } from "react-redux";
+import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import { store } from "@store/store";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ErrorPage from "./pages/error-page";
-import LandingPage from "./pages/landing/landing-page";
+import ErrorPage from "@pages/ErrorPage";
+import LandingPage from "@pages/landing/LandingPage";
+import CharacterPage from "@pages/character/CharacterPage";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <LandingPage />,
-    errorElement: <ErrorPage/>
-  },
+    {
+        path: "/",
+        element: <LandingPage />,
+        errorElement: <ErrorPage/>
+    },
+    {
+        path: "/character/:id",
+        element: <CharacterPage />,
+    }
 ]);
 
 function App() {
   return (
       <Provider store={store}>
-        <RouterProvider router={router}/>
+        <RouterProvider router={router} />
       </Provider>
   );
 }
